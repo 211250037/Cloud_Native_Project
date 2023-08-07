@@ -21,7 +21,7 @@ spec:
         app: cloud-native-project
     spec:
       containers:
-      - image: harbor.edu.cn/nju01/cloud-native-project:{VERSION}
+      - image: https://172.29.4.26/harbor/projects/17/repositories/nju01%2Fcloud-native-project:{VERSION}
         name: cloud-native-project
       imagePullSecrets:
         - name: nju01
