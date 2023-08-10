@@ -23,6 +23,8 @@ spec:
       containers:
       - image: harbor.edu.cn/nju01/cloud-native-project:{VERSION}
         name: cloud-native-project
+      imagePullSecrets:
+        - name: nju01
 ---
 apiVersion: v1
 kind: Service
