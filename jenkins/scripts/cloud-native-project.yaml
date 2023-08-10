@@ -6,7 +6,7 @@ metadata:
   name: cloud-native-project
   namespace: nju01
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: cloud-native-project
@@ -24,7 +24,7 @@ spec:
       - image: harbor.edu.cn/nju01/cloud-native-project:{VERSION}
         name: cloud-native-project
       imagePullSecrets:
-        - name: nju01
+        - name: nju01-secret
 ---
 apiVersion: v1
 kind: Service
